@@ -10,26 +10,25 @@ Setup VM for serverless and python projects(Ubuntu)
   
 
 ## install AWS CLI and configure    
-  pip3 install awscli 
 
-### configure  
-  aws configure `note`:Provide Access keys and secret keys 
+    pip3 install awscli
+
+### configure 
+    aws configure `note`:Provide Access keys and secret keys
 
 ## install git and configure 
-   apt-get install git 
+    apt-get install git
 
 ## install NodeJS and NPM 
+    curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash - 
 
-  curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash - 
+    sudo apt-get install -y nodejs 
 
-  sudo apt-get install -y nodejs 
-
-  sudo apt-get install  npm 
+    sudo apt-get install  npm 
 
 ## install serverless 
-
-  sudo npm install -g serverless 
-  serverless --version 
+    sudo npm install -g serverless 
+    serverless --version 
 # Virtual ENV  
 ## Creating Virtual  environments
     python3 -m venv myenv
